@@ -10,7 +10,8 @@
     "lint": "npx eslint .",
     "lint-fix": "npx eslint . --fix",
     "format": "prettier --write --ignore-unknown \"src/**/*.{js,ts,json}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "bot": "node src/bot.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "jsdom": "^24.1.0",
     "listr2": "^8.2.3",
     "minimist": "^1.2.8",
+    "node-telegram-bot-api": "^0.66.0",
     "protobufjs": "^7.3.2",
     "uuid": "^10.0.0"
   },
