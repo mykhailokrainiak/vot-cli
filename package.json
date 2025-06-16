@@ -43,7 +43,8 @@
     "minimist": "^1.2.8",
     "node-telegram-bot-api": "^0.66.0",
     "protobufjs": "^7.3.2",
-    "uuid": "^10.0.0"
+    "uuid": "^10.0.0",
+    "yt-dlp-exec": "^1.0.2"
   },
   "devDependencies": {
     "eslint": "^8.56.0",

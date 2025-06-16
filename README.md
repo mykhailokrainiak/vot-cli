@@ -119,6 +119,13 @@ Once the bot is running, you can interact with it on Telegram using the followin
     *   To get subtitles in a specific language (e.g., Spanish):
       `/subtitles https://www.youtube.com/watch?v=examplevideo --reslang=es`
 
+*   **Merge translated audio with video:**
+    *   To merge with audio translated to the default language (Russian):
+      `/mergetranslate https://www.youtube.com/watch?v=examplevideo`
+    *   To merge with audio translated to a specific language (e.g., English):
+      `/mergetranslate https://www.youtube.com/watch?v=examplevideo --reslang=en`
+    *   **Note:** This command is experimental. It downloads the original video and the translated audio, merges them, and then uploads the result. This process can be very time-consuming and resource-intensive, especially for long videos. Please use it patiently.
+
 *   **Get help:**
     *   To see all available commands, options, and supported languages:
       `/help`
