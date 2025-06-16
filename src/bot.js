@@ -195,10 +195,10 @@ bot.onText(mergeTranslateRegex, async (msg, match) => {
     const audioFilename = `translated_audio_${Date.now()}.${audioExtension}`;
     tempTranslatedAudioPath = path.join(tempDir, audioFilename);
 
-    bot.sendMessage(chatId, `Step 2/4: Downloading translated audio to ${tempTranslatedAudioPath}...`);
+    bot.sendMessage(chatId, 'Step 2/4: Downloading translated audio to ' + tempTranslatedAudioPath + '...');
     await downloadAsset(translateResult.downloadUrl, tempTranslatedAudioPath, 'translated audio');
 
-    bot.sendMessage(chatId, `Step 3/4: Downloading original video "${videoUrl}"...\`);
+    bot.sendMessage(chatId, 'Step 3/4: Downloading original video "' + videoUrl + '"...');
     originalVideoPath = await downloadVideoPublic(videoUrl);
 
     bot.sendMessage(chatId, `Step 4/4: Merging video and audio. This is the longest step...\`);
