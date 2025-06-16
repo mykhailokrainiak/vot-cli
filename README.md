@@ -103,6 +103,30 @@ To run the Telegram bot on your own computer or server, follow these steps:
 
     If everything is set up correctly, you should see a "Bot started..." message in your console, and your bot should be responsive on Telegram.
 
+### 🤖 Bot Command Examples
+
+Once the bot is running, you can interact with it on Telegram using the following commands:
+
+*   **Translate a video:**
+    *   To translate a video to the default language (Russian):
+      `/translate https://www.youtube.com/watch?v=examplevideo`
+    *   To translate a video to a specific language (e.g., English):
+      `/translate https://www.youtube.com/watch?v=examplevideo --reslang=en`
+
+*   **Get subtitles for a video:**
+    *   To get subtitles in the default language (Russian):
+      `/subtitles https://www.youtube.com/watch?v=examplevideo`
+    *   To get subtitles in a specific language (e.g., Spanish):
+      `/subtitles https://www.youtube.com/watch?v=examplevideo --reslang=es`
+
+*   **Get help:**
+    *   To see all available commands, options, and supported languages:
+      `/help`
+
+**Note:**
+*   Replace `https://www.youtube.com/watch?v=examplevideo` with the actual URL of the video you want to process.
+*   The bot will attempt to download and send the translated audio or subtitle file directly. If it fails to do so for translated audio, it will provide a download link.
+
 ## 📁 Полезные ссылки
 
 1. Версия для браузера: [Ссылка](https://github.com/ilyhalight/voice-over-translation)
