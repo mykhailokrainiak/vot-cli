@@ -59,6 +59,50 @@ npm link
 
 5. Готово, теперь, вы можете использовать vot-cli в вашем терминале
 
+## 🤖 Running the Telegram Bot
+
+To run the Telegram bot on your own computer or server, follow these steps:
+
+1.  **Prerequisites:**
+    *   Ensure you have Node.js installed (version 18 or higher is recommended, as per the project's requirements).
+    *   You will need a Telegram Bot Token. You can get one by talking to [BotFather](https://t.me/botfather) on Telegram and creating a new bot.
+
+2.  **Clone the Repository:**
+    If you haven't already, clone this repository to your local machine:
+    ```bash
+    git clone https://github.com/FOSWLY/vot-cli.git
+    cd vot-cli
+    ```
+
+3.  **Install Dependencies:**
+    Install the necessary Node.js packages:
+    ```bash
+    npm install
+    ```
+
+4.  **Set Up Telegram Bot Token:**
+    You need to provide the Telegram Bot Token to the application. The recommended way is to set it as an environment variable named `TELEGRAM_BOT_TOKEN`.
+
+    On Linux/macOS:
+    ```bash
+    export TELEGRAM_BOT_TOKEN="YOUR_ACTUAL_BOT_TOKEN_HERE"
+    ```
+    On Windows (Command Prompt):
+    ```bash
+    set TELEGRAM_BOT_TOKEN="YOUR_ACTUAL_BOT_TOKEN_HERE"
+    ```
+    Alternatively, you can directly modify the `src/bot.js` file where the token is defined, but using an environment variable is more secure and flexible:
+    `const token = process.env.TELEGRAM_BOT_TOKEN || 'YOUR_TELEGRAM_BOT_TOKEN';`
+
+5.  **Run the Bot:**
+    Start the bot using the following command:
+    ```bash
+    npm run bot
+    ```
+    This command executes the `node src/bot.js` script defined in `package.json`.
+
+    If everything is set up correctly, you should see a "Bot started..." message in your console, and your bot should be responsive on Telegram.
+
 ## 📁 Полезные ссылки
 
 1. Версия для браузера: [Ссылка](https://github.com/ilyhalight/voice-over-translation)
