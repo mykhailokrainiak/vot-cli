@@ -6,7 +6,7 @@ import { fetchSubtitlesPublic, translateVideoPublic } from './vot-cli-lib.js';
 const supportedLanguages = ['ru', 'en', 'de', 'fr', 'es', 'it', 'tr', 'ja', 'ko', 'zh', 'ar', 'bn', 'bs', 'cs', 'da', 'el', 'et', 'fi', 'he', 'hi', 'hr', 'hu', 'id', 'lt', 'lv', 'mk', 'nb', 'ne', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sr', 'sv', 'ta', 'th', 'uk', 'vi'];
 const defaultResponseLang = 'ru';
 
-const token = process.env.TELEGRAM_BOT_TOKEN || 'YOUR_TELEGRAM_BOT_TOKEN';
+const token = process.env.TELEGRAM_BOT_TOKEN || '7737577021:AAGiD04WxafsbQp-KCeF9TU8WxYskyvNHbI';
 const bot = new TelegramBot(token, { polling: true });
 
 async function handleVideoTranslation(chatId, videoUrl, responseLang) {
